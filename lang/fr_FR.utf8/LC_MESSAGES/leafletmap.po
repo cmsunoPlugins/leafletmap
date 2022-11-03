@@ -1,0 +1,176 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CmsUno\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-03 16:21+0100\n"
+"PO-Revision-Date: 2022-11-03 16:21+0100\n"
+"Last-Translator: malgrange <jacques.malgrange@gmail.com>\n"
+"Language-Team: Jacques Malgrange <contacter@boiteasite.fr>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Report-\tmsgstr-Bugs-To: \n"
+"Report-\t\tmsgstr-Bugs-To: \n"
+"X-Poedit-KeywordsList: _;T_\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-SearchPath-0: ../../..\n"
+
+#: ../../../leafletmap.php:18
+msgid ""
+"This plugin allows you to add OpenStreetMap maps to your site to view a "
+"location or a GPX track."
+msgstr ""
+"Ce plugin permet d'ajouter des cartes OpenStreetMap sur votre site pour "
+"visualiser un lieu ou une trace GPX."
+
+#: ../../../leafletmap.php:19
+msgid "Just insert the code"
+msgstr "Il suffit d'insérer le code"
+
+#: ../../../leafletmap.php:19
+msgid "nameofthemap"
+msgstr "nomdelacarte"
+
+#: ../../../leafletmap.php:19
+msgid "in the template or in the page content."
+msgstr "dans le template ou dans le contenu de la page."
+
+#: ../../../leafletmap.php:20
+msgid "You can create as many map as you need."
+msgstr "Vous pouvez créer autant de cartes que vous le souhaitez."
+
+#: ../../../leafletmap.php:21
+msgid "Add a leafletmap :"
+msgstr "Ajouter une carte Leaflet"
+
+#: ../../../leafletmap.php:24
+msgid "Name"
+msgstr "Nom"
+
+#: ../../../leafletmap.php:26
+msgid "Name of the leafletmap"
+msgstr "Nom de la carte Leaflet"
+
+#: ../../../leafletmap.php:29
+msgid "Type"
+msgstr "Type"
+
+#: ../../../leafletmap.php:32 ../../../leafletmap.php:35
+msgid "A location"
+msgstr "Un lieu"
+
+#: ../../../leafletmap.php:33 ../../../leafletmap.php:36
+msgid "A GPX track"
+msgstr "Une trace GPX"
+
+#: ../../../leafletmap.php:38
+msgid "What kind of content I want to display on this map."
+msgstr "Quel type de contenu je veux afficher sur cette carte."
+
+#: ../../../leafletmap.php:41
+msgid "Height"
+msgstr "Hauteur"
+
+#: ../../../leafletmap.php:43
+msgid "Height of the map in pixels. The width will be 100%. Default: 300px"
+msgstr ""
+"Hauteur de la carte en pixels. La largeur sera de 100 %. Par défaut : 300 "
+"pixels"
+
+#: ../../../leafletmap.php:46
+msgid "Zoom level"
+msgstr "Niveau de zoom"
+
+#: ../../../leafletmap.php:48
+msgid "Map scale from 0 (world) to 18 (hamlet). Default: 13"
+msgstr "Échelle de la carte de 0 (monde) à 18 (hameau). Par défaut : 13"
+
+#: ../../../leafletmap.php:51
+msgid "GPS location"
+msgstr "Localisation GPS"
+
+#: ../../../leafletmap.php:56
+msgid "GPS position of the center of the map. Format: +/- decimal. Ex: -4.123"
+msgstr "Position GPS du centre de la carte. Format : +/- décimal. Ex : -4.123"
+
+#: ../../../leafletmap.php:59
+msgid "Label"
+msgstr "Label"
+
+#: ../../../leafletmap.php:61
+msgid "Label for the marker on this position. No marker if it is empty."
+msgstr ""
+"Étiquette pour le marqueur sur cette position. Pas de marqueur s'il est vide."
+
+#: ../../../leafletmap.php:64
+msgid "GPX File"
+msgstr "Fichier GPX"
+
+#: ../../../leafletmap.php:67
+msgid "File manager"
+msgstr "Gestionnaire de fichiers"
+
+#: ../../../leafletmap.php:71
+msgid "Select the GPX file in your file manager."
+msgstr "Sélectionnez le fichier GPX dans votre gestionnaire de fichiers."
+
+#: ../../../leafletmap.php:74
+msgid "Add the leafletmap"
+msgstr "Ajouter la carte Leaflet"
+
+#: ../../../leafletmap.php:74
+msgid "Add"
+msgstr "Ajouter"
+
+#: ../../../leafletmap.php:76
+msgid "Existing leafletmap :"
+msgstr "Cartes existantes :"
+
+#: ../../../leafletmap.php:104 ../../../leafletmap.php:117
+msgid "Backup performed"
+msgstr "Sauvegarde effectu&eacute;e"
+
+#: ../../../leafletmap.php:105 ../../../leafletmap.php:122
+msgid "Impossible backup"
+msgstr "Sauvegarde impossible"
+
+#~ msgid "This plugin allows you to add ..."
+#~ msgstr "Ce plugin permet d'ajouter ..."
+
+#~ msgid "Box"
+#~ msgstr "Box"
+
+#~ msgid ""
+#~ "This plugin allows you to add small blocks of content. For example: a "
+#~ "date, an address, a phone number."
+#~ msgstr ""
+#~ "Ce plugin permet d'ajouter des petits blocs de contenu. Par exemple : une "
+#~ "date, une adresse, un numéro de téléphone."
+
+#~ msgid ""
+#~ "It can also add a big HTML content as a sidebar or something else. For "
+#~ "this you should choose HTML editor."
+#~ msgstr ""
+#~ "Vous pouvez également ajouter un gros bloc HTML comme une barre laterale "
+#~ "ou autres. Choisissez alors l'Editeur HTML."
+
+#~ msgid "Add a box :"
+#~ msgstr "Ajouter un bloc :"
+
+#~ msgid "Plain text"
+#~ msgstr "Texte brut"
+
+#~ msgid "HTML Editor"
+#~ msgstr "Editeur HTML"
+
+#~ msgid "Add the box"
+#~ msgstr "Ajoute le bloc"
+
+#~ msgid "Save settings"
+#~ msgstr "Enregistre le contenu"
+
+#~ msgid "Save"
+#~ msgstr "Enregistrer"

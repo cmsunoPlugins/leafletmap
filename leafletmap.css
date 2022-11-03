@@ -1,0 +1,8 @@
+#curLeafletmap table{margin:10px;}
+#curLeafletmap td{border:1px solid #aaa;padding:3px 5px;vertical-align:middle;}
+#curLeafletmap td strong{font-weight:700;font-size:14px;color:#555;}
+@media screen and (max-width:780px){
+	#curLeafletmap tr{display:block;margin-bottom:10px;}
+	#curLeafletmap td:not(:first-child){border:none;}
+	#curLeafletmap td:nth-child(2){display:block;text-align:left;width:100%;}
+}
