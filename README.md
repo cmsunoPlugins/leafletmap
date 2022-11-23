@@ -29,4 +29,5 @@ This plugin allows you to add OpenStreetMap maps to your site to view a location
 
 ### Versions ###
 
+* 1.1 - 23/11/2022 : Free jQuery - ES6
 * 1.0 - 03/11/2022 : First stable version

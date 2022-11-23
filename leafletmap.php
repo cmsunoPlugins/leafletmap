@@ -1,12 +1,12 @@
 <?php
 session_start(); 
-if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQUESTED_WITH'])!='xmlhttprequest') {sleep(2);exit;} // ajax request
 if(!isset($_POST['unox']) || $_POST['unox']!=$_SESSION['unox']) {sleep(2);exit;} // appel depuis uno.php
 ?>
 <?php
 include('../../config.php');
 include('lang/lang.php');
-$q1 = file_get_contents('../../data/busy.json'); $a1 = json_decode($q1,true); $busy = $a1['nom'];
+if(isset($_POST['ubusy'])) $busy = preg_replace("/[^A-Za-z0-9-_]/",'',$_POST['ubusy']);
+else { $q1 = file_get_contents('../../data/busy.json'); $a1 = json_decode($q1,true); $busy = $a1['nom']; }
 // ********************* actions *************************************************************************
 if(isset($_POST['action'])) {
 	switch ($_POST['action']) {
@@ -87,6 +87,10 @@ if(isset($_POST['action'])) {
 		}
 		else $a = array();
 		$b = preg_replace("/[^a-zA-Z0-9]+/", "", $_POST['name']);
+		if(!$b){
+			echo '!'.T_('Impossible backup');
+			exit;
+		}
 		$a[$b] = array();
 		$a[$b]['hei'] = intval($_POST['hei']);
 		if(empty($_POST['typ'])) {
