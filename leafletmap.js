@@ -6,6 +6,7 @@ function f_save_leafletmap(){
 	let c=document.getElementById('leafletmapTyp'),x=new FormData();
 	x.set('action','save');
 	x.set('unox',Unox);
+	x.set('ubusy',Ubusy);
 	x.set('name',document.getElementById('leafletmapName').value);
 	x.set('hei',document.getElementById('leafletmapHei').value);
 	x.set('typ',c.options[c.selectedIndex].value);
@@ -47,6 +48,7 @@ function f_del_leafletmap(f){
 	let x=new FormData();
 	x.set('action','del');
 	x.set('unox',Unox);
+	x.set('ubusy',Ubusy);
 	x.set('name',f);
 	fetch('uno/plugins/leafletmap/leafletmap.php',{method:'post',body:x})
 	.then(r=>r.text())

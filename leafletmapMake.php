@@ -14,7 +14,7 @@ if(file_exists('data/'.$Ubusy.'/leafletmap.json')) {
 		if($v['typ']=='gpx') {
 			$b .= "var map".$k."=L.map('map".$k."');";
 			$b .= "var gpx".$k."='".$v['fil']."';";
-			$b .= "new L.GPX(gpx".$k.",{async:true,marker_options:{startIconUrl:'uno/plugins/leafletmap/leaflet-gpx/pin-icon-start.png',endIconUrl:'uno/plugins/leafletmap/leaflet-gpx/pin-icon-end.png',shadowUrl:'uno/plugins/leafletmap/leaflet-gpx/pin-shadow.png'},";
+			$b .= "new L.GPX(gpx".$k.",{async:true,slope:true,marker_options:{startIconUrl:'uno/plugins/leafletmap/leaflet-gpx/pin-icon-start.png',endIconUrl:'uno/plugins/leafletmap/leaflet-gpx/pin-icon-end.png',wptIconUrl:'uno/plugins/leafletmap/leaflet-gpx/marker.png'},";
 			$b .= "polyline_options:{color:'blue',opacity: 0.75,}";
 			$b .= "}).on('loaded',function(e){map".$k.".fitBounds(e.target.getBounds());}).addTo(map".$k.");";
 		}
@@ -28,7 +28,8 @@ if(file_exists('data/'.$Ubusy.'/leafletmap.json')) {
 	if($b) {
 		$Uhead .= '<link rel="stylesheet" href="uno/plugins/leafletmap/leaflet/leaflet.css" type="text/css" />'."\r\n";
 		$Ufoot .= '<script src="uno/plugins/leafletmap/leaflet/leaflet.js"></script>'."\r\n";
-		$Ufoot .= '<script src="uno/plugins/leafletmap/leaflet-gpx/gpx.min.js"></script>'."\r\n";
+	//	$Ufoot .= '<script src="uno/plugins/leafletmap/leaflet-gpx/gpx.min.js"></script>'."\r\n";
+		$Ufoot .= '<script src="uno/plugins/leafletmap/leaflet-gpx/gpx.js"></script>'."\r\n";
 		$Ufoot .= '<script>'.$b.'</script>'."\r\n";
 		$Ustyle .= $c."\r\n";
 	}
